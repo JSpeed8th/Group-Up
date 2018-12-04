@@ -1,0 +1,18 @@
+<h1> Edit Page </h1>
+
+<%= @user.fname %>
+
+<%= form_for @user do |u| %>
+  <div> <%= u.text_field :fname %> <%= u.text_field :lname %> </div>
+  <div> <%= u.text_field :username, placeholder: 'username'%> </div>
+  <div> <%= u.telephone_field :phone, placeholder: 'phone num' %> </div>
+  <%= u.submit %>
+<% end %>
+
+<br>
+<hr>
+<%= link_to "Delete Account", user_path, method: :delete %>
+<br>
+<hr>
+
+<%= link_to 'Back', :back %>
