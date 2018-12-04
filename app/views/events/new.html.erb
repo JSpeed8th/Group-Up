@@ -1,0 +1,12 @@
+
+<%=form_for :event, url: {:action => "assign", :controller => :events}, html: {method: 'post'} do |f|%>
+Start-Time<%=f.datetime_field :start%>
+End-Time<%=f.datetime_field :finish%>
+Name: <%=f.text_field :name%>
+Description: <%=f.text_field :description%>
+<div>Add Members<%=f.select :user_id, options_from_collection_for_select(@users, 'id', 'fname')%></div>
+Respond By: <%=f.datetime_field :response %>
+Type: <%=f.text_field :event_type %>
+<!-- <%#=hidden_field_tag :event_id, @event.id %> -->
+<%=f.submit%>
+<%end%>
