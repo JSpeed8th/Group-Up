@@ -35,3 +35,15 @@
 	margin: 10px auto;
 	line-height: 50px;
 }
+
+#right-side {
+	display: grid;
+	grid-column: 2 / 3;
+	border: 1px solid;
+}
+
+.event-container {
+	border: 1px solid;
+	
+}
+
