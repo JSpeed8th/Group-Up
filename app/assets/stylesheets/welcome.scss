@@ -1,3 +1,90 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.welcome-wrapper {
+  width: 100vw;
+}
+
+.welcome-image {
+  background-image: url('welcome-Image.jpg');
+  background-size: 100% 100%;
+  position: relative;
+  height: 100vh;
+}
+
+.welcome-image:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(41,41,41,0.4);
+}
+
+.text {
+    color: white;
+    position: relative;
+    top: 20vh;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid white;
+    // box-shadow: 3px 3px 3px;
+    // left: 2vw;
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px;
+    width: 75%;
+    // padding: 8px 0px;
+    text-align: center;
+    // overflow: hidden;
+    // font-size: 2.5em;
+    letter-spacing: .1em;
+    line-height: 2.5em;
+    font-family: 'Playfair Display', serif;
+}
+
+.signup {
+  margin: 25px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 2.25em;
+  text-align: center;
+  color: white;
+  width: 10%;
+  background-color: lightgrey;
+  text-decoration: none;
+  position: absolute;
+  left: 85vw;
+}
+
+.signin {
+  margin: 50px auto;
+  border: 1px solid;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  width: 20%;
+  border-radius: 5px;
+  background: lightgrey;
+  text-decoration: none;
+
+}
+
+.home-head {
+  font-size: 5em;
+  margin: 0 auto;
+  line-height: 2.5em;
+  font-family: 'Playfair Display', serif;
+}
+
+.home-sub {
+  font-size: 2em;
+  margin: 10px auto;
+  width: 90%;
+  font-family: 'Playfair Display', serif;
+}
+
+.home-para {
+  font-size: 1.5em;
+  margin: 10px auto;
+  line-height: 3em;
+  width: 90%;
+  font-family: 'Playfair Display', serif;
+}
