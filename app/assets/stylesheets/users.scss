@@ -1,0 +1,37 @@
+.profile-wrapper {
+  width: 100%;
+  border: 1px solid;
+}
+
+.profile-container {
+	margin: 150px auto;
+	border: 1px solid;
+	width: 80%;
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+#left-side {
+	display: grid;
+	grid-column: 1 / 2;
+	border: 1px solid;
+}
+
+#profile-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: blue;
+	margin: 10px auto;
+}
+
+#profile-name {
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+	background-color: lightgrey;
+	text-align: center;
+	margin: 10px auto;
+	line-height: 50px;
+}
