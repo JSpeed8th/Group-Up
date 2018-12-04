@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <!-- If user is signed in, display logout -->
+    <% if user_signed_in? %>
+    <div> <%= link_to "Logout", destroy_user_session_path, method: :delete %></div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
