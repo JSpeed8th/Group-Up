@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-	#custom associations
+	#custom associations  \
+	validates :username, uniqueness: true
 	has_many :invites
 	has_many :events, through: :invites
 	has_many :locations, through: :invites
