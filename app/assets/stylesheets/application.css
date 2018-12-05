@@ -27,3 +27,9 @@ body {
 .logout-btn a {
   text-decoration: none;
 }
+
+.company-name {
+  float: left;
+  margin: 10px;
+  font-family: 'Lobster', cursive;
+}
