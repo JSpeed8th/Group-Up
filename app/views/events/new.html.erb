@@ -1,15 +1,15 @@
-
+<h1 class="event-page-title"> Let's Get This Party Started Right! </h1>
 <%= form_for :event, url: {:action => "assign", :controller => :events}, html: {method: 'post'} do |f| %>
 Start-Time<%= f.datetime_field :start %>
 End-Time<%= f.datetime_field :finish %>
-Name: <%= f.text_field :name %>
-Description: <%= f.text_field :description %>
+Party-Name: <%= f.text_field :name, placeholder: 'Name Your Party' %>
+Description: <%= f.text_area :description, autocomplete: 'off', placeholder: 'What\'s Your Party Like?'  %>
 <!-- <div>Add Members<%=f.select :user_id, options_from_collection_for_select(@users, 'id', 'fname')%></div> -->
 Respond By: <%= f.datetime_field :response  %>
-Type: <%= f.text_field :event_type %>
+Type: <%= f.select :event_type, options_for_select(["restaurant", "bar", "cafe", "night_club", "museum"]) %>
 <!-- <%#=hidden_field_tag :event_id, @event.id %> -->
 
 <!-- Upon submit Address bar will pass along longitude and latitude into a javascript variable which will get passed along to rails as apart of a hash. -->
-<input type="text" class="user_address" placeholder= "address">
+Address: <input type="text" class="user_address" placeholder = "Where are you coming from?">
 <%= f.submit %>
 <% end %>
