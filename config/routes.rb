@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :users
   resources :events
   resources :invites
+  resources :locations
 
   root "welcome#index"
   post "/assign" => "events#assign"

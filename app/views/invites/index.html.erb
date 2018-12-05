@@ -1,0 +1,15 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<div><%@invites.each do |i| %>
+event: <%=i.event.description%>
+<br>
+user: <%=i.user.fname %>
+<br>
+location: <%=i.location.lat %>, <%= i.location.long %>
+<br>
+<%i.host%>
+<hr>
+<%end%></div>

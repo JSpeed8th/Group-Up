@@ -1,5 +1,6 @@
+
 class EventsController < ApplicationController
- 
+
   def new
   # @event = Event.find(params[:id])
   @users = User.all
@@ -10,10 +11,10 @@ class EventsController < ApplicationController
   end
 
   def assign
-    latitude = 23
+    location = 23
     longitude = 23
     paramName = ""
-    
+
     newEvent = Event.new(event_params)
 
     if newEvent.save
