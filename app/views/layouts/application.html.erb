@@ -16,7 +16,7 @@
     <% if user_signed_in? %>
     <nav>
       <a href="/users/<%=current_user.id%>"><h1 class=company-name> Group Up </h1> </a>
-      <div class="logout-btn"> <%= link_to "Logout", destroy_user_session_path, method: :delete %></div>
+      <div class="logout-btn"> <%= link_to "logout", destroy_user_session_path, method: :delete %></div>
     </nav>
     <% end %>
     <%= yield %>
