@@ -2,22 +2,17 @@
 
 <div class="welcome-wrapper">
   <div class="welcome-image">
-    <div class='signup'><%= link_to "sign-up", new_user_registration_path %></div>
+    <div class='login'><%= link_to "log in", new_user_session_path %></div>
 
     <div class="text">
       <h1 class='home-head'>Group Up</h1>
       <h3 class='home-sub'>An app designed to help you and your friends find and decide on a place to go!</h3>
-      <p class='home-para'>Sign in or Sign up to get started!</p>
-      <div class='signin'><%= link_to "sign-in", new_user_session_path %></div>
+      <p class='home-para'>Sign up to get started!</p>
+
+      <a href="users/sign_up"><button class="signup" type="button">sign up</button></a>
       <!-- <h1> Don't Know Where To Eat? <br> We Can Help With That! <<h1></h1>> -->
     </div>
 
   </div>
 </div>
-
-<%else%>
-<div> <%= link_to "Logout", destroy_user_session_path, method: :delete %></div>
-
-
-
 <%end%>
