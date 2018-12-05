@@ -16,19 +16,18 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(41,41,41,0.4);
+    background: rgba(41,41,41,0.45);
 }
 
 .text {
     color: white;
     position: relative;
-    top: 20vh;
+    top: 15vh;
     margin: 0 auto;
     display: block;
-    border: 1px solid white;
     // box-shadow: 3px 3px 3px;
     // left: 2vw;
-    background: rgba(255,255,255,0.3);
+    // background: rgba(255,255,255,0.3);
     border-radius: 5px;
     width: 75%;
     // padding: 8px 0px;
@@ -41,37 +40,53 @@
 }
 
 .signup {
-  margin: 25px;
-  border: 1px solid;
+  margin-bottom: 40px;
   border-radius: 5px;
-  font-size: 2.25em;
+  padding: 10px;
+  font-size: 2em;
   text-align: center;
-  color: white;
-  width: 10%;
-  background-color: lightgrey;
-  text-decoration: none;
-  position: absolute;
-  left: 85vw;
+  color: #560F0C;
+  background-color: #B8AA94;
+  border: none;
+  box-shadow: 0px .2px .5px black;
+  font-family: 'Lobster', cursive;
+  transition: .2s;
 }
 
-.signin {
-  margin: 50px auto;
-  border: 1px solid;
+.signup:hover {
+  cursor: pointer;
+  background-color: #754414;
+  color: #290706;
+  transition: .2s;
+}
+
+.login {
+  position: relative;
+  margin: 15px;
+  float: right;
   font-size: 1.5em;
   text-align: center;
-  color: white;
-  width: 20%;
+  padding: 5px;
   border-radius: 5px;
-  background: lightgrey;
-  text-decoration: none;
+  font-family: 'Lobster', cursive;
+}
 
+.login a {
+  text-decoration: none;
+  color: white;
+  transition: .2s;
+}
+
+.login a:hover {
+  color: #560F0C;
+  transition: .2s;
 }
 
 .home-head {
   font-size: 5em;
   margin: 0 auto;
   line-height: 2.5em;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lobster', cursive;
 }
 
 .home-sub {
@@ -88,5 +103,3 @@
   width: 90%;
   font-family: 'Playfair Display', serif;
 }
-
-
