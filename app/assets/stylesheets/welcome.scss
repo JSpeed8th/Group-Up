@@ -41,12 +41,12 @@
 
 .signup {
   margin-bottom: 40px;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   font-size: 2em;
   text-align: center;
   color: #560F0C;
-  background-color: #B8AA94;
+  background-color: rgba(184, 170, 148, 0.8);
   border: none;
   box-shadow: 0px .2px .5px black;
   font-family: 'Lobster', cursive;
@@ -60,26 +60,25 @@
   transition: .2s;
 }
 
-.login {
+.login a {
   position: relative;
-  margin: 15px;
+  margin: 20px;
   float: right;
   font-size: 1.5em;
   text-align: center;
-  padding: 5px;
-  border-radius: 5px;
   font-family: 'Lobster', cursive;
-}
-
-.login a {
   text-decoration: none;
   color: white;
   transition: .2s;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .2);
 }
 
 .login a:hover {
   color: #560F0C;
   transition: .2s;
+  background-color: rgba(	86, 15, 12, .4);
 }
 
 .home-head {
