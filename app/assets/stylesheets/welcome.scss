@@ -16,62 +16,72 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(41,41,41,0.4);
+    background: rgba(41,41,41,0.45);
 }
 
 .text {
     color: white;
     position: relative;
-    top: 20vh;
+    top: 15vh;
     margin: 0 auto;
     display: block;
-    border: 1px solid white;
-    // box-shadow: 3px 3px 3px;
-    // left: 2vw;
-    background: rgba(255,255,255,0.3);
     border-radius: 5px;
     width: 75%;
-    // padding: 8px 0px;
     text-align: center;
-    // overflow: hidden;
-    // font-size: 2.5em;
     letter-spacing: .1em;
     line-height: 2.5em;
     font-family: 'Playfair Display', serif;
 }
 
 .signup {
-  margin: 25px;
-  border: 1px solid;
-  border-radius: 5px;
-  font-size: 2.25em;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 2em;
   text-align: center;
-  color: white;
-  width: 10%;
-  background-color: lightgrey;
-  text-decoration: none;
-  position: absolute;
-  left: 85vw;
+  color: #560F0C;
+  background-color: rgba(184, 170, 148, 0.7);
+  border: none;
+  font-family: 'Lobster', cursive;
+  transition: .2s;
 }
 
-.signin {
-  margin: 50px auto;
-  border: 1px solid;
+.signup:hover {
+  cursor: pointer;
+  background-color: rgba(41, 7, 6, .5);
+  color: #290706;
+  transition: .2s;
+}
+
+.login a {
+  position: relative;
+  margin: 20px;
+  float: right;
   font-size: 1.5em;
   text-align: center;
-  color: white;
-  width: 20%;
-  border-radius: 5px;
-  background: lightgrey;
+  font-family: 'Lobster', cursive;
   text-decoration: none;
+  color: white;
+  transition: .2s;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .2);
+}
 
+.login a:hover {
+  color: #606833;
+  transition: .2s;
+  background-color: rgba(131, 140, 77, .4);
 }
 
 .home-head {
+  text-align: center;
   font-size: 5em;
-  margin: 0 auto;
+  margin: auto;
   line-height: 2.5em;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lobster', cursive;
+  display: inline-block;
+  width: 100%;
 }
 
 .home-sub {
@@ -88,5 +98,3 @@
   width: 90%;
   font-family: 'Playfair Display', serif;
 }
-
-

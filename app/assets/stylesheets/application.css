@@ -18,3 +18,29 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.logout-btn {
+  float: right;
+  margin: 10px;
+}
+
+.logout-btn a {
+  text-decoration: none;
+  color: black;
+}
+
+.company-name {
+  float: left;
+  margin: 10px;
+  font-family: 'Lobster', cursive;
+}
+
+a .company-name {
+  color: black;
+  transition: .2s;
+}
+
+a .company-name:hover {
+  transition: .2s;
+  color: #560F0C;
+}
