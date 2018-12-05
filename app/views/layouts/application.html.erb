@@ -7,9 +7,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet">
   </head>
 
   <body>
+    <!-- If user is signed in, display logout -->
+    <% if user_signed_in? %>
+    <nav>
+      <a href="/users/<%=current_user.id%>"><h1 class=company-name> Group Up </h1> </a>
+      <div class="logout-btn"> <%= link_to "logout", destroy_user_session_path, method: :delete %></div>
+    </nav>
+    <% end %>
     <%= yield %>
   </body>
 </html>

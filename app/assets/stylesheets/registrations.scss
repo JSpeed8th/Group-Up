@@ -1,3 +1,32 @@
 // Place all the styles related to the registrations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.page-title {
+  font-family: 'Lobster', cursive;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.registrations-wrapper {
+  margin: auto;
+  margin-top: 15vh;
+  text-align: center;
+}
+
+.text-box {
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: none;
+}

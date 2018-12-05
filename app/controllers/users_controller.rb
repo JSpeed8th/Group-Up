@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :authenticate_user!
 
   def show
-    @user = User.find(current_user.id)
+    @user = User.find(params[:id])
     @parties = @user.events
   end
 
@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   def update
     user = User.find(current_user.id)
     if user.update(user_params)
-      redirect_to '/users/current_user.id'
+      redirect_to "/users/#{current_user.id}"
     end
   end
 
