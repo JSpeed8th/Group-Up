@@ -48,13 +48,15 @@
   color: #560F0C;
   background-color: #B8AA94;
   border: none;
-  box-shadow: 0px 1px 1px black;
+  box-shadow: 0px .2px .5px black;
   font-family: 'Lobster', cursive;
+  transition: .2s;
 }
 
 .signup:hover {
   cursor: pointer;
-  background-color: #B66A1F;
+  background-color: #754414;
+  color: #290706;
   transition: .2s;
 }
 
@@ -72,6 +74,7 @@
 .login a {
   text-decoration: none;
   color: white;
+  transition: .2s;
 }
 
 .login a:hover {
