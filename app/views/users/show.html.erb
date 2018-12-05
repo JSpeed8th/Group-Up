@@ -3,15 +3,13 @@
       <div id='left-side'>
         <div id='profile-image'>
         </div>
-        <div id='profile-name'>
-          <!-- If id of profile is equal to the id of current user, add link to name in order to edit profile.-->
           <% if @user.id === current_user.id%>
-            <a href="/users/<%= @user.id %>/edit"><%= @user.fname + " " + @user.lname %> </a>
+            <h2 class="user-name"><a href="/users/<%= @user.id %>/edit"><%= @user.fname + " " + @user.lname %> </a></h2>
+            <a href="/events/new"><button type="button" class="start-party-btn">Party Starter!</button></a>
           <% else %>
-            <%= @user.fname + " " + @user.lname %>
+            <h2 class="user-name"><%= @user.fname + " " + @user.lname %></h2>
+            <button type="button" class="start-party-btn"><a href="#">Invite To Party!</a></button>
           <% end %>
-        </div>
-        
       </div>
       <div id='right-side'>
         <%= @parties.all.reverse.each do |e| %>
