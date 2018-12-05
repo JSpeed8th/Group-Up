@@ -5,7 +5,7 @@
         </div>
           <% if @user.id === current_user.id%>
             <h2 class="user-name"><a href="/users/<%= @user.id %>/edit"><%= @user.fname + " " + @user.lname %> </a></h2>
-            <a href="/events/new"><button type="button" class="start-party-btn">Party Starter!</button></a>
+            <a href="/events/new" onClick="window.location.reload()"><button type="button" class="start-party-btn">Party Starter!</button></a>
           <% else %>
             <h2 class="user-name"><%= @user.fname + " " + @user.lname %></h2>
             <button type="button" class="start-party-btn"><a href="#">Invite To Party!</a></button>
@@ -15,7 +15,7 @@
         <%= @parties.all.reverse.each do |e| %>
           <div class='event-container'>
             <div id='event-name'>
-            Event name: <%= @parties.name %>
+            Event name: <%= e.name %>
             </div>
             <div id='event-date'>
             <%#= @parties.start %>

@@ -11,7 +11,7 @@ class EventsController < ApplicationController
   end
 
   def assign
-    location = 23
+    latitude = 23
     longitude = 23
     paramName = ""
 
