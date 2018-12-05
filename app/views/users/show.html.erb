@@ -15,10 +15,10 @@
         <%= @parties.all.reverse.each do |e| %>
           <div class='event-container'>
             <div id='event-name'>
-            <%= @parties.name %>
+            Event name: <%= @parties.name %>
             </div>
             <div id='event-date'>
-            <%= @parties.start %>
+            <%#= @parties.start %>
             </div>
           </div>
         <% end %>
