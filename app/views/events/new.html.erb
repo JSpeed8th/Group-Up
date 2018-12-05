@@ -10,6 +10,11 @@ Type: <%= f.text_field :event_type %>
 <!-- <%#=hidden_field_tag :event_id, @event.id %> -->
 
 <!-- Upon submit Address bar will pass along longitude and latitude into a javascript variable which will get passed along to rails as apart of a hash. -->
-<input type="text" class="user_address" placeholder= "address">
+<input type="text" id="locationTextField" placeholder="address">
 <%= f.submit %>
-<% end %>
+
+
+
+  <% end %>
+
+<%= javascript_include_tag 'app.js' %>

@@ -9,9 +9,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <link href="https://fonts.googleapis.com/css?family=Lobster|Playfair+Display" rel="stylesheet">
+
+  <!-- HTTP Request for Google Autocomplete Feature -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe9uhsXwvwMIFQPeblTTd9wJ5saGuppEk&libraries=places&callback=activatePlacesSearch">
+  </script>
+  
   </head>
 
   <body>
+
     <!-- If user is signed in, display logout -->
     <% if user_signed_in? %>
     <nav>
@@ -22,5 +28,6 @@
 
     
     <%= yield %>
+
   </body>
 </html>
