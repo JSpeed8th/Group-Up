@@ -4,16 +4,13 @@
         <div id='profile-image'>
         </div>
         <div id='profile-name'>
-<<<<<<< HEAD
           <%= @user.fname + " " + @user.lname %>
-=======
           <!-- If id of profile is equal to the id of current user, add link to name in order to edit profile.-->
           <% if @user.id === current_user.id%>
             <a href="/users/<%= @user.id %>/edit"><%= @user.fname + " " + @user.lname %> </a>
           <% else %>
             <%= @user.fname + " " + @user.lname %>
           <% end %>
->>>>>>> dd59c859d9847a07b0c95cc87e897553754a6631
         </div>
         
       </div>
